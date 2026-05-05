@@ -1,4 +1,8 @@
-from modules import script_callbacks, shared, infotext_utils
+from modules import script_callbacks, shared
+try:
+    from modules import infotext_utils as generation_parameters_copypaste
+except ImportError:
+    from modules import generation_parameters_copypaste
 from modules.script_callbacks import ImageSaveParams
 import gradio as gr
 from modules import images
