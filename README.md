@@ -1,5 +1,7 @@
 # sd-webui-stealth-pnginfo
 
+Small changes so it works with Forge Neo again. [Thanks to Panchovix](https://github.com/Haoming02/sd-webui-forge-classic/issues/1093).
+
 This extension embeds image generation metadata into the (unused) alpha channel of a PNG generated in [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui). 
 
 **Will not work for JPEG images.** Untested on webp, should work in theory but who knows.
@@ -14,4 +16,3 @@ Extension auto-activates and runs alongside standard webui PNG info functions, n
 
 Forked from [@ashen-sensored/sd_webui_stealth_pnginfo](https://github.com/ashen-sensored/sd_webui_stealth_pnginfo) - this was originally created to get around Discord stripping the text sections from PNGs, but they've reversed that change so Ashen is not maintaining that anymore. I find it convenient though (since it doesn't rely on that data being retained, and many websites/devices will strip it) so here it is.
 
-****Small changes so it works with Forge Neo again.
