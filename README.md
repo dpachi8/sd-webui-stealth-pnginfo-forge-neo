@@ -13,3 +13,5 @@ Extension auto-activates and runs alongside standard webui PNG info functions, n
 ### Acknowledgements
 
 Forked from [@ashen-sensored/sd_webui_stealth_pnginfo](https://github.com/ashen-sensored/sd_webui_stealth_pnginfo) - this was originally created to get around Discord stripping the text sections from PNGs, but they've reversed that change so Ashen is not maintaining that anymore. I find it convenient though (since it doesn't rely on that data being retained, and many websites/devices will strip it) so here it is.
+
+****Small changes so it works with Forge Neo again.
