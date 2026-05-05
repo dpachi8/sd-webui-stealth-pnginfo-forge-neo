@@ -190,7 +190,7 @@ def send_rgb_image_and_dimension(x):
         if img.mode == 'RGBA':
             img = img.convert('RGB')
     else:
-        img = infotext_utils.image_from_url_text(x)
+        img = generation_parameters_copypaste.image_from_url_text(x)
         if img.mode == 'RGBA':
             img = img.convert('RGB')
 
@@ -304,7 +304,7 @@ def stealth_resize_image(resize_mode, im, width, height, upscaler_name=None):
 LANCZOS = (Image.Resampling.LANCZOS if hasattr(Image, 'Resampling') else Image.LANCZOS)
 original_read_info_from_image = images.read_info_from_image
 images.read_info_from_image = read_info_from_image_stealth
-infotext_utils.send_image_and_dimensions = send_rgb_image_and_dimension
+generation_parameters_copypaste.send_image_and_dimensions = send_rgb_image_and_dimension
 original_resize_image = images.resize_image
 images.resize_image = stealth_resize_image
 
